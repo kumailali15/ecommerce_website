@@ -187,21 +187,29 @@ main {
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    /* next line pe move hon agar space kam ho */
     justify-content: center;
-    /* center alignment */
     gap: 30px;
-    /* cards ke darmiyan gap */
     padding: 20px;
 }
 
 .card {
     margin: 30px 30px;
     flex: 0 0 auto;
-    /* fixed width rakhe */
 }
 
-
-/* footer {
+footer {
     background-color: #A3B087;
-} */
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}

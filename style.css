@@ -126,6 +126,7 @@ main {
 
 .card-group {
     display: flex;
+    flex-wrap: wrap;
     gap: 50px;
     justify-content: center;
     padding: 20px;
@@ -170,17 +171,24 @@ main {
     color: gray;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
     .card-container {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 30px;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 786px) {
     .card-container {
-        grid-template-columns: 1fr;
         gap: 20px;
+    }
+    .center {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .center {
+        display: none;
     }
 }
 
